@@ -55,3 +55,14 @@ body {
         text-shadow: $shadow-text-1;
     }
 }
+.heading-tertiary {
+    font-size: $font-size-default;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.paragraph {
+    font-size: $font-size-default;
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}

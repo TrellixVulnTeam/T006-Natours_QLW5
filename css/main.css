@@ -177,8 +177,34 @@ body {
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+}
+
+.paragraph:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
 .u-center-text {
   text-align: center;
+}
+
+.u-margin-bottom-5 {
+  margin-bottom: 0.5rem;
+}
+
+.u-margin-bottom-10 {
+  margin-bottom: 1rem;
+}
+
+.u-margin-bottom-20 {
+  margin-bottom: 2rem;
 }
 
 .u-margin-bottom-80 {
@@ -250,6 +276,33 @@ body {
           box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
 }
 
+.btn-text:link, .btn-text:visited {
+  text-decoration: none;
+  color: #27b485;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #54c47a;
+  padding: 3px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  display: inline-block;
+}
+
+.btn-text:hover {
+  background: #54c47a;
+  color: #fff;
+  -webkit-box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(-0.3rem);
+          transform: translateY(-0.3rem);
+}
+
+.btn-text:active {
+  -webkit-transform: translateY(-0.1rem);
+          transform: translateY(-0.1rem);
+  -webkit-box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
 .header {
   height: 95vh;
   position: relative;
@@ -283,7 +336,6 @@ body {
 
 .row {
   max-width: 114rem;
-  background-color: aqua;
   margin: 0 auto;
 }
 
@@ -298,7 +350,6 @@ body {
 }
 
 .row [class^="col-"] {
-  background-color: cornflowerblue;
   float: left;
 }
 
