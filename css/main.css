@@ -303,6 +303,49 @@ body {
           box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
+.composition {
+  position: relative;
+}
+
+.composition__photo {
+  position: absolute;
+  width: 55%;
+  -webkit-box-shadow: 0rem 1.5rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0rem 1.5rem 2rem rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  outline-offset: 1rem;
+}
+
+.composition__photo--p1 {
+  top: -2rem;
+  left: 0;
+}
+
+.composition__photo--p2 {
+  top: 2rem;
+  right: 0rem;
+}
+
+.composition__photo--p3 {
+  top: 10rem;
+  left: 20%;
+}
+
+.composition__photo:hover {
+  z-index: 9;
+  -webkit-transform: scale(1.05) translateY(-0.5rem);
+          transform: scale(1.05) translateY(-0.5rem);
+  -webkit-box-shadow: 0rem 2rem 2rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0rem 2rem 2rem rgba(0, 0, 0, 0.4);
+  outline: 1.5rem solid #54c47a;
+}
+
+.composition:hover .composition__photo:not(:hover) {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
 .header {
   height: 95vh;
   position: relative;

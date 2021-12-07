@@ -1,0 +1,37 @@
+.composition {
+    position: relative;
+    // height: 100vh;
+    &__photo {
+        position: absolute;
+        width: 55%;
+        box-shadow: $shadow-IMG-1;
+        // border-radius: 2px;
+        transition: all 0.2s;
+        outline-offset: 1rem;
+        &--p1 {
+            top: -2rem;
+            left: 0;
+        }
+        &--p2 {
+            top: 2rem;
+            right: 0rem;
+        }
+        &--p3 {
+            // top: 50%;  can't use 50% because parent div has no height
+            top: 10rem;
+            left: 20%;
+        }
+        &:hover {
+            z-index: 9;
+            transform: scale(1.05) translateY(-0.5rem);
+            box-shadow: $shadow-IMG-bigger;
+            outline: 1.5rem solid $color-primary;
+        }
+    }
+    &:hover &__photo:not(:hover) {
+        transform: scale(0.95);
+    }
+    // &__photo:hover &__photo:not(:hover) {
+    //     transform: scale(0.95);
+    // }
+}
