@@ -5,8 +5,9 @@
         position: absolute;
         width: 55%;
         box-shadow: $shadow-IMG-1;
-        // border-radius: 2px;
+        border-radius: 2px;
         transition: all 0.2s;
+        transition: border-radius;
         outline-offset: 1rem;
         &--p1 {
             top: -2rem;
@@ -26,6 +27,7 @@
             transform: scale(1.05) translateY(-0.5rem);
             box-shadow: $shadow-IMG-bigger;
             outline: 1.5rem solid $color-primary;
+            border-radius: 0;
         }
     }
     &:hover &__photo:not(:hover) {

@@ -312,8 +312,11 @@ body {
   width: 55%;
   -webkit-box-shadow: 0rem 1.5rem 2rem rgba(0, 0, 0, 0.2);
           box-shadow: 0rem 1.5rem 2rem rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  -webkit-transition: border-radius;
+  transition: border-radius;
   outline-offset: 1rem;
 }
 
@@ -339,6 +342,7 @@ body {
   -webkit-box-shadow: 0rem 2rem 2rem rgba(0, 0, 0, 0.4);
           box-shadow: 0rem 2rem 2rem rgba(0, 0, 0, 0.4);
   outline: 1.5rem solid #54c47a;
+  border-radius: 0;
 }
 
 .composition:hover .composition__photo:not(:hover) {
